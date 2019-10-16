@@ -1,1 +1,0 @@
-<h3>[field:typename /]</h3>
