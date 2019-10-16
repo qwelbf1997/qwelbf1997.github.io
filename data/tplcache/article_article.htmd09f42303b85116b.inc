@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("field","",433,452);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",453,479);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",520,542);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",582,633);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",3300,3335);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("field","",3863,3885);
+$z[5][4]['name']="typename";
+$z[6]=Array("field","",5061,5083);
+$z[6][4]['name']="position";
+$z[7]=Array("field","",5627,5646);
+$z[7][4]['name']="title";
+$z[8]=Array("type","[field:typelink /]",5772,5830);
+$z[8][4]['typeid']="0";
+$z[8][4]['row']="1";
+$z[9]=Array("field","",5832,5854);
+$z[9][4]['name']="typename";
+$z[10]=Array("field","",5911,5968);
+$z[10][4]['name']="pubdate";
+$z[10][4]['function']="strftime(\"%Y-%m-%d\",@me)";
+$z[11]=Array("field","",6211,6229);
+$z[11][4]['name']="body";
+$z[12]=Array("type","[field:typelink /]",6469,6527);
+$z[12][4]['typeid']="0";
+$z[12][4]['row']="1";
+$z[13]=Array("field","\$ID = @me; \$sql = \"SELECT * FROM `dede_arctype` WHERE id=\$ID\";\$query = mysql_query(\$sql);\$row=mysql_fetch_array(\$query); \$relID = \"\$row[reid]\"; if(\$relID == 0) {@me = \$row[typename];}else{\$sql = \"SELECT `typename` FROM `dede_arctype` WHERE id=\$relID\";\$query = mysql_query(\$sql);\$row=mysql_fetch_array(\$query); @me = \$row[typename];}",7999,8383);
+$z[13][4]['name']="typeid";
+$z[13][4]['runphp']="yes";
+$z[14]=Array("channel","\r\n                <li><a href=\"[field:typeurl/]\" target=\"\">[field:typename/]</a><i></i></li>\r\n                ",8491,8717);
+$z[14][4]['type']="son";
+$z[14][4]['currentstyle']="<li class='current'><a href='~typelink~'>~typename~</a></li>";
+$z[15]=Array("include","",9560,9595);
+$z[15][4]['filename']="foot.htm";
+
+?>
